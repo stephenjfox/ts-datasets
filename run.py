@@ -8,15 +8,15 @@ from tsextrinsic_regression_data_loader import load_from_tsfile_to_dataframe
 
 
 def handle_australian_electricity(data: pd.DataFrame):
+    # Series value is a PandasArray, instance, because it's jagged. Why they didn't just pack a Series, idk
     truncation_length = min([len(array) for array in data['series_value']])
     print(f"{truncation_length = }")
     df = pd.DataFrame({row['state']: row['series_value'][:truncation_length] for _, row in data.iterrows()})
     correlation = df.corr()
     print(correlation)
 
-def main():
+def work_monash():
     monash_root = "/Users/stephenfox/dev/Datasets/Monash-Time-Series-Datasets-in-TSF-format"
-    tse_root = "/Users/stephenfox/dev/Datasets/TST-Comparison/Monash_UEA_UCR_Regression_Archive"
 
     australian_electricity_path = Path(monash_root, "australian_electricity_demand_dataset.tsf")
     (loaded_data, frequency, forecast_horizon, contain_missing_values,
@@ -31,6 +31,15 @@ def main():
     # handle_australian_electricity(loaded_data)
 
 
+
+def work_tse():
+    tse_root = "/Users/stephenfox/dev/Datasets/TST-Comparison/Monash_UEA_UCR_Regression_Archive"
+
+
+
+def main():
+    work_tse()
+    work_monash()
 
 
 
