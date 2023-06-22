@@ -1,3 +1,14 @@
+"""
+Direct import for the TS-Extrinsic-Regression data loading utility
+
+Original Source: https://github.com/ChangWeiTan/TS-Extrinsic-Regression/blob/master/utils/data_loader.py
+
+License: https://github.com/ChangWeiTan/TS-Extrinsic-Regression/blob/master/LICENSE
+- This is the GNU GPL 3 license.
+- This data shouldn't be used in a commercial product, and neither should this code (you probably aren't using `.ts` in prod, are you?)
+- I'm using these data tools to figure out how this data works, and to learn time series machine learning.
+"""
+
 import numpy as np
 import pandas as pd
 from tqdm import tqdm

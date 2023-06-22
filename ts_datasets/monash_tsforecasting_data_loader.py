@@ -1,3 +1,17 @@
+"""
+Import of the TSForecasting Monash Time Series Forecasting Archive, with modifications to ease the use with any modern editor
+(e.g. one that reads valid Python docstrings)
+
+
+Original Source: https://github.com/rakshitha123/TSForecasting/blob/master/utils/data_loader.py
+
+License: https://github.com/rakshitha123/TSForecasting/blob/master/LICENSE.md
+- Creative Commons 4.0 International License
+- Free distribution of education work is required
+- Attribution of the source (see the above) is required.
+"""
+
+
 from datetime import datetime
 from distutils.util import strtobool
 
