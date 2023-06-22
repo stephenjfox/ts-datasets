@@ -3,8 +3,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from monash_tsforecasting_data_loader import convert_tsf_to_dataframe
-from tsextrinsic_regression_data_loader import load_from_tsfile_to_dataframe
+from ts_datasets.monash_tsforecasting_data_loader import convert_tsf_to_dataframe
+from ts_datasets.tsextrinsic_regression_data_loader import load_from_tsfile_to_dataframe
 
 
 def handle_australian_electricity(data: pd.DataFrame):
