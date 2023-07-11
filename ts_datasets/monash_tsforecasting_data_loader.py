@@ -11,7 +11,6 @@ License: https://github.com/rakshitha123/TSForecasting/blob/master/LICENSE.md
 - Attribution of the source (see the above) is required.
 """
 
-
 from datetime import datetime
 from distutils.util import strtobool
 
